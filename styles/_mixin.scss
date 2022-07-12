@@ -1,0 +1,4 @@
+@mixin sizesImages ($width, $height) {
+    height: $height;
+    width: $width;
+};

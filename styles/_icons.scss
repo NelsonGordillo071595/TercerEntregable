@@ -1,0 +1,27 @@
+.social-icons{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+        display: map-get($map: $estilosListas, $key: display);
+        margin: map-get($map: $estilosListas, $key: margin);
+        position: map-get($map: $estilosListas, $key: position);
+        font-size: map-get($map: $estilosListas, $key: font-size);
+    }
+    a{
+        display: inline-block;
+        &::before{
+            @extend %estilosIconosBefore;
+        }
+
+        &:hover::before{
+            transform: scale(0);
+            transition: all 265ms ease-in;
+        }
+        &:hover{
+            i{
+                @extend %estilosIconosHover;
+            }
+        }
+    }
+}

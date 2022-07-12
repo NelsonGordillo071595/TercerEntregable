@@ -1,0 +1,11 @@
+.social-icons{
+    @each $redSocial, $color in $redes{
+        .#{$redSocial}{
+            color: $color;
+            position: absolute;
+            top: 0.1vw;
+            left: 0.8vw;
+            transition: all 265ms ease-out;
+        }
+    } 
+};

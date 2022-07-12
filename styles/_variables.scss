@@ -1,0 +1,24 @@
+$backgroundFooter: #f5f5dc;
+
+%estilosIconosHover {
+transform: scale(2);
+-ms-transform: scale(2);
+-webkit-transform: scale(2);
+color: #fff;
+background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+transition: all 265ms ease-out;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+transition: all 265ms ease-in;
+};
+
+%estilosIconosBefore{
+    transform: scale(0.5);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: "";
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    transition: all 265ms ease-out;
+};

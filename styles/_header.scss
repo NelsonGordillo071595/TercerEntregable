@@ -1,0 +1,25 @@
+header{
+    margin-top: 10vw;
+    justify-content: center;
+}
+
+.logo{
+    transition: transform ease 3s;
+    transform: rotate(0deg);
+    &:hover{
+        transform: rotate(360deg);
+    }
+    @include sizesImages (10vw, 100%);
+}
+
+li{
+    margin-left: map-get($map: $estilosListas, $key: margin-left)
+}
+
+.imagenprincipal{
+    @include sizesImages (100%, 0);
+}
+
+.bg-lav{
+    background-color: #fff;
+  }
